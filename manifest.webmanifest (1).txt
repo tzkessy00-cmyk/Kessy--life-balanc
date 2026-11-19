@@ -1,0 +1,9 @@
+{
+  "name": "KESSY LIFE BALANCE",
+  "short_name": "Kessy Balance",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#0d141b",
+  "theme_color": "#101820",
+  "description": "Offline fitness, HRM study, nutrition and daily planner"
+}
