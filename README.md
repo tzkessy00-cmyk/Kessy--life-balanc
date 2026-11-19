@@ -1,2 +1,2 @@
-# Kessy--life-balanc
-Kessy new balance 
+Kessy--life-balance
+KESSY LIFE BALANCE – Fitness, Nutrition, HRM Study and Daily Planner
