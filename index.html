@@ -2,122 +2,101 @@
 <html lang="sw">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#101820">
 <title>KESSY LIFE BALANCE</title>
 <style>
-:root{color-scheme:dark;--bg:#101820;--panel:#1b2a34;--panel2:#243844;--gold:#e0bd65;--text:#f5f6f7;--muted:#b6c2ca;--line:#3b505d;--green:#62d0a2;--red:#ff9292}
-*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:15px system-ui,Arial,sans-serif}
-header{padding:22px 16px;background:#172630;border-bottom:1px solid var(--line)}h1{margin:0;color:var(--gold);font-size:23px;letter-spacing:.7px}header p{margin:6px 0 0;color:var(--muted)}
-nav{position:sticky;top:0;z-index:3;display:flex;gap:7px;overflow:auto;padding:10px;background:#121e26;border-bottom:1px solid var(--line)}
-button,.btn{border:1px solid var(--line);border-radius:9px;padding:10px 13px;background:var(--panel2);color:var(--text);font-weight:650;cursor:pointer}
-nav button{white-space:nowrap}button.active,.primary{background:var(--gold);color:#171d21;border-color:var(--gold)}
-main{max-width:1000px;margin:auto;padding:14px}.tab{display:none}.tab.active{display:block}
-h2{font-size:19px;margin:8px 0 14px}h3{font-size:16px;color:var(--gold);margin:0 0 10px}
-.panel{background:var(--panel);border:1px solid var(--line);border-radius:13px;padding:14px;margin:11px 0}
-.row{display:flex;gap:9px;align-items:center;flex-wrap:wrap}.row>*{flex:1;min-width:0}
-label{display:block;color:var(--muted);font-size:13px;margin-top:5px}
-input,select,textarea{width:100%;padding:11px;border:1px solid var(--line);border-radius:9px;background:#101b23;color:var(--text);font:inherit;margin:5px 0 10px}
-textarea{min-height:100px;resize:vertical}.small{font-size:12px;color:var(--muted)}.muted{color:var(--muted)}
-.exercise,.record{padding:12px;border:1px solid var(--line);border-radius:10px;margin:8px 0;background:#15232c}
-.exercise strong{display:block}.exercise button{margin-top:9px}.badge{display:inline-block;padding:4px 8px;border-radius:20px;background:#30434f;font-size:12px;margin:3px}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:8px}.stat{padding:12px;background:#14232c;border:1px solid var(--line);border-radius:10px}.stat b{display:block;color:var(--gold);font-size:22px}
-.danger{border-color:#754343;color:#ffaaaa}.hidden{display:none!important}footer{text-align:center;color:var(--muted);font-size:12px;padding:22px}
-dialog{background:var(--panel);color:var(--text);border:1px solid var(--line);border-radius:14px;width:min(94%,460px)}dialog::backdrop{background:#000a}
-a{color:var(--gold)}@media(min-width:700px){main{padding:22px}header{padding-left:max(18px,calc((100% - 960px)/2))}}
+:root{--bg:#101820;--panel:#192630;--panel2:#223440;--gold:#e0b84f;--text:#f4f6f7;--muted:#aebbc3;--line:#344854;--red:#e57373;--green:#76c893}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:15px system-ui,-apple-system,Segoe UI,sans-serif}header{padding:22px 16px 16px;background:#0b1218;border-bottom:1px solid var(--line)}header h1{margin:0;color:var(--gold);font-size:22px}header p{margin:5px 0 0;color:var(--muted)}main{max-width:980px;margin:auto;padding:14px}.tabs{display:flex;gap:7px;overflow:auto;padding:4px 0 12px}.tabs button{white-space:nowrap;background:var(--panel);color:var(--text);border:1px solid var(--line);padding:10px 13px;border-radius:10px}.tabs button.active{background:var(--gold);color:#171717;border-color:var(--gold);font-weight:700}.panel{background:var(--panel);border:1px solid var(--line);border-radius:13px;padding:14px;margin:10px 0}.muted{color:var(--muted)}h2{font-size:19px;margin:5px 0 12px}h3{font-size:16px;margin:10px 0}label{display:block;color:var(--muted);font-size:13px;margin:9px 0 5px}input,select,textarea{width:100%;padding:11px;border-radius:9px;border:1px solid var(--line);background:#0f1a22;color:var(--text);font:inherit}textarea{min-height:90px;resize:vertical}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(145px,1fr));gap:10px}.btn{border:0;border-radius:9px;padding:11px 14px;background:var(--gold);color:#171717;font-weight:700;margin:8px 5px 0 0}.btn.secondary{background:var(--panel2);color:var(--text);border:1px solid var(--line)}.btn.danger{background:#6c3030;color:white}.exercise{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:10px 0;border-bottom:1px solid var(--line)}.exercise:last-child{border:0}.exercise button{margin:0;padding:7px 10px}.tag{font-size:12px;color:var(--gold)}.hidden{display:none!important}.item{padding:12px 0;border-bottom:1px solid var(--line)}.item:last-child{border:0}.item strong{display:block}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}.stat{background:var(--panel2);padding:12px;border-radius:10px;text-align:center}.stat b{display:block;color:var(--gold);font-size:20px}.notice{padding:10px;border-left:3px solid var(--gold);background:#202e37;color:var(--muted);border-radius:5px;font-size:13px}.small{font-size:12px}.section-title{margin-top:18px;color:var(--gold);font-weight:700}
 </style>
 </head>
 <body>
-<header><h1>KESSY LIFE BALANCE</h1><p>Fitness • HRM Study • Workout Records • Notes • Offline</p></header>
-<nav>
-<button class="active" data-tab="workout">Mazoezi</button><button data-tab="records">Rekodi</button><button data-tab="hrm">HRM Study</button><button data-tab="notes">Notes</button><button data-tab="backup">Import / Export</button>
-</nav>
+<header><h1>KESSY LIFE BALANCE</h1><p>Fitness • HRM Study • Notes • Workout Records</p></header>
 <main>
-<section id="workout" class="tab active">
-<h2>Orodha ya mazoezi</h2>
-<div class="panel"><div class="row"><div><label>Kundi la misuli</label><select id="groupFilter"></select></div><div><label>Tafuta zoezi</label><input id="search" placeholder="Mfano: cable, dips, row..."></div></div><p class="small">Majina na maelezo ya mazoezi yako ndani ya index hii. Hakuna picha wala michoro.</p></div>
-<div id="exerciseList"></div>
+<nav class="tabs" aria-label="Menu">
+<button class="active" data-tab="workouts">Mazoezi</button><button data-tab="records">Rekodi</button><button data-tab="hrm">HRM Study</button><button data-tab="notes">Notes</button><button data-tab="backup">Import / Export</button>
+</nav>
+<section id="workouts" class="page">
+<div class="panel"><h2>Chagua zoezi</h2><label for="groupFilter">Kundi la misuli</label><select id="groupFilter"></select><label for="exerciseSearch">Tafuta zoezi</label><input id="exerciseSearch" placeholder="Andika jina la zoezi..."><div id="exerciseList"></div></div>
+<div class="panel"><h2>Rekodi zoezi ulilofanya</h2>
+<form id="recordForm">
+<div class="grid"><div><label>Tarehe</label><input type="date" id="rDate" required></div><div><label>Zoezi</label><select id="rExercise" required></select></div><div><label>Uzito (kg)</label><input type="number" id="rWeight" min="0" step="0.5" placeholder="Mf. 20"></div><div><label>Sets</label><input type="number" id="rSets" min="1" step="1" value="3" required></div><div><label>Reps</label><input type="number" id="rReps" min="1" step="1" value="10" required></div></div>
+<label>Maoni / kumbukumbu</label><textarea id="rComment" placeholder="Jinsi ulivyojisikia, maumivu au maelezo mengine..."></textarea><button class="btn" type="submit">Hifadhi rekodi</button>
+</form></div>
 </section>
-<section id="records" class="tab">
-<h2>Rekodi za mazoezi</h2>
-<div class="panel"><div class="grid"><div class="stat"><b id="sessions">0</b><span class="small">Rekodi</span></div><div class="stat"><b id="setsTotal">0</b><span class="small">Sets</span></div><div class="stat"><b id="repsTotal">0</b><span class="small">Reps</span></div></div></div>
-<div class="panel"><div class="row"><div><label>Kuanzia</label><input type="date" id="fromDate"></div><div><label>Mpaka</label><input type="date" id="toDate"></div></div><button id="resetDates">Onyesha zote</button></div>
-<div id="recordList"></div>
-</section>
-<section id="hrm" class="tab">
-<h2>HRM Study – Chuo Kikuu Huria</h2>
-<div class="panel"><h3>Human Resource Management</h3><p>HRM ni usimamizi wa rasilimali watu katika taasisi. Unahusisha kupanga, kuajiri, kuchagua, kuendeleza, kutathmini na kuhifadhi wafanyakazi.</p></div>
-<div class="panel"><h3>Mada za msingi</h3><ul>
-<li>Introduction to Human Resource Management</li><li>Human Resource Planning</li><li>Job Analysis and Job Design</li><li>Recruitment and Selection</li><li>Training and Development</li><li>Performance Management and Appraisal</li><li>Compensation and Benefits</li><li>Employee Relations</li><li>Occupational Health and Safety</li><li>Employment Laws and Ethics</li>
-</ul></div>
-<div class="panel"><h3>Kamusi fupi ya HRM</h3><p><b>Recruitment:</b> Kutafuta watu wanaofaa kuomba kazi.</p><p><b>Selection:</b> Kuchagua mwombaji anayefaa zaidi.</p><p><b>Training:</b> Mafunzo ya kuongeza ujuzi wa kazi.</p><p><b>Performance appraisal:</b> Tathmini ya utendaji wa mfanyakazi.</p><p><b>Compensation:</b> Mshahara na marupurupu ya mfanyakazi.</p></div>
-<div class="panel"><h3>Notes za masomo ya HRM</h3><label>Kichwa</label><input id="hrmTitle" placeholder="Mfano: Human Resource Planning"><label>Maelezo</label><textarea id="hrmBody" placeholder="Andika notes zako hapa..."></textarea><button class="primary" id="saveHrm">Hifadhi notes za HRM</button><div id="hrmNotes"></div></div>
-</section>
-<section id="notes" class="tab"><h2>Notes zangu</h2><div class="panel"><label>Kichwa</label><input id="noteTitle"><label>Maelezo</label><textarea id="noteBody"></textarea><button class="primary" id="saveNote">Hifadhi note</button></div><div id="notesList"></div></section>
-<section id="backup" class="tab">
-<h2>Import / Export na uhifadhi</h2>
-<div class="panel"><h3>Export – Pakua data</h3><p class="small">Hifadhi rekodi, notes na notes za HRM kama faili la JSON kwenye simu yako.</p><button class="primary" id="exportBtn">Pakua backup yote</button><button id="csvBtn">Pakua rekodi CSV</button></div>
-<div class="panel"><h3>Import – Rejesha data</h3><p class="small">Chagua backup ya KESSY LIFE BALANCE. Data itaunganishwa na iliyopo; haitafuta rekodi zilizopo.</p><input type="file" id="importFile" accept=".json,application/json"><button id="importBtn">Import / Rejesha backup</button><p id="backupMsg" class="small" aria-live="polite"></p></div>
-<div class="panel"><h3>Matumizi bila internet</h3><p>Index hii ni faili moja lenye mazoezi, HRM na mfumo wa rekodi. Pakua index.html kwenye simu na uifungue kupitia browser; haihitaji internet baada ya kuwa kwenye simu. Data inahifadhiwa kwenye browser hiyo hiyo. Pakua backup mara kwa mara.</p><button class="danger" id="clearAll">Futa data yote kwenye simu hii</button></div>
-</section>
+<section id="records" class="page hidden"><div class="panel"><h2>Historia ya mazoezi</h2><div class="grid"><div><label>Kuanzia tarehe</label><input type="date" id="fromDate"></div><div><label>Mpaka tarehe</label><input type="date" id="toDate"></div></div><div class="stats"><div class="stat"><b id="totalRecords">0</b><span class="small">Rekodi</span></div><div class="stat"><b id="totalSets">0</b><span class="small">Sets</span></div><div class="stat"><b id="totalReps">0</b><span class="small">Reps</span></div></div><div id="recordList"></div></div></section>
+<section id="hrm" class="page hidden"><div class="panel"><h2>HRM Study – Utangulizi</h2><p class="muted">Mada fupi za kuanzia kwa mwanafunzi wa Human Resource Management.</p><div id="hrmTopics"></div></div><div class="panel"><h2>Hifadhi notes za HRM</h2><label>Kichwa</label><input id="hrmTitle" placeholder="Mf. Introduction to HRM"><label>Maelezo</label><textarea id="hrmBody" placeholder="Andika notes zako hapa..."></textarea><button class="btn" id="saveHrm">Hifadhi note</button><div id="hrmNotes"></div></div></section>
+<section id="notes" class="page hidden"><div class="panel"><h2>Notes zangu</h2><label>Kichwa</label><input id="noteTitle" placeholder="Kichwa cha note"><label>Maandishi</label><textarea id="noteBody" placeholder="Andika hapa..."></textarea><button class="btn" id="saveNote">Hifadhi note</button><div id="notesList"></div></div></section>
+<section id="backup" class="page hidden"><div class="panel"><h2>Import / Export</h2><p>Pakua nakala ya data zako au rudisha nakala uliyowahi kuhifadhi.</p><button class="btn" id="exportJson">Pakua Backup (JSON)</button><button class="btn secondary" id="exportCsv">Pakua Rekodi (CSV)</button><label>Chagua backup ya JSON kurejesha</label><input type="file" id="importFile" accept=".json,application/json"><button class="btn secondary" id="importJson">Import Backup</button><p class="notice">Data huhifadhiwa kwenye browser hii ya simu. Export backup mara kwa mara na usifute data za browser kabla ya kuhifadhi nakala.</p></div></section>
+<footer class="muted small" style="padding:18px 4px">KESSY LIFE BALANCE • Toleo la offline HTML • Hakuna picha za mazoezi</footer>
 </main>
-<footer>KESSY LIFE BALANCE • Offline single-file edition • Hakuna picha wala michoro</footer>
-<dialog id="logDialog"><form id="logForm"><h3 id="dlgName">Rekodi zoezi</h3><p id="dlgGroup" class="small"></p><label>Tarehe</label><input type="date" id="logDate" required><div class="row"><div><label>Uzito (kg)</label><input type="number" id="weight" min="0" step=".5" placeholder="Mfano 25"></div><div><label>Sets</label><input type="number" id="sets" min="1" max="50" value="3" required></div><div><label>Reps kwa set</label><input type="number" id="reps" min="1" max="200" value="10" required></div></div><label>Maelezo (hiari)</label><textarea id="comment"></textarea><div class="row"><button type="button" id="cancel">Ghairi</button><button class="primary" type="submit">Hifadhi rekodi</button></div></form></dialog>
 <script>
-"use strict";
-const EX=[
-["Chest",[
-["Flat Bench Press","Bonyeza barbell kwenye benchi tambarare."],["Incline Bench Press","Bonyeza barbell kwenye benchi lenye mwinuko."],["Decline Bench Press","Bonyeza barbell kwenye benchi lenye mteremko."],["Flat Dumbbell Press","Bonyeza dumbbell ukiwa umelala."],["Incline Dumbbell Press","Bonyeza dumbbell kwenye incline bench."],["Decline Dumbbell Press","Bonyeza dumbbell kwenye decline bench."],["Machine Chest Press","Sukuma handles za chest press machine."],["Push-Up","Inua na shusha mwili kwa mikono."],["Chest Dips","Inama mbele kidogo kwenye dip bars."],["Assisted Chest Dips","Tumia mashine kusaidia dips."],["Cable Chest Fly","Kutanisha handles za cable mbele ya kifua."],["Cable Crossover","Vuta cable za pande mbili zikutanishe mbele."],["Low-to-High Cable Fly","Vuta cable kutoka chini kwenda juu."],["High-to-Low Cable Fly","Vuta cable kutoka juu kwenda chini."],["Single-Arm Cable Fly","Fanya cable fly kwa mkono mmoja."],["Standing Cable Chest Press","Sukuma handles mbele ukiwa umesimama."],["Incline Cable Press","Sukuma cable kwa mwelekeo wa incline."],["Pec Deck Fly","Fungua na funga mikono kwenye pec deck."]
-]],
-["Back",[
-["Lat Pulldown","Vuta bar kutoka juu kuelekea kifua."],["Wide-Grip Lat Pulldown","Vuta kwa mshiko mpana."],["Close-Grip Lat Pulldown","Vuta kwa mshiko mwembamba."],["Reverse-Grip Lat Pulldown","Vuta kwa viganja kuelekea usoni."],["Single-Arm Lat Pulldown","Vuta handle kwa mkono mmoja."],["Seated Cable Row","Vuta handle kuelekea tumboni."],["Close-Grip Cable Row","Vuta cable kwa mshiko mwembamba."],["Wide-Grip Cable Row","Vuta cable kwa mshiko mpana."],["Single-Arm Cable Row","Vuta cable kwa mkono mmoja."],["High Cable Row","Vuta handles kutoka juu kuelekea kifua."],["Low Cable Row","Vuta cable kutoka chini kuelekea kiwiliwili."],["Straight-Arm Cable Pulldown","Vuta bar chini mikono karibu kunyooka."],["Cable Face Pull","Vuta kamba kuelekea usoni."],["Barbell Bent-Over Row","Vuta barbell kuelekea tumboni."],["Dumbbell One-Arm Row","Vuta dumbbell kwa mkono mmoja."],["Chest-Supported Row","Vuta uzito kifua kikiwa kimeegemezwa."],["T-Bar Row","Vuta T-bar kuelekea mwilini."],["Machine Row","Tumia mashine ya rowing."],["Pull-Up","Jivute juu kwenye pull-up bar."],["Assisted Pull-Up","Tumia mashine kusaidia pull-up."],["Back Extension","Inua kiwiliwili kwa udhibiti."]
-]],
-["Shoulders",[
-["Seated Dumbbell Shoulder Press","Bonyeza dumbbell juu ukiwa umekaa."],["Standing Barbell Overhead Press","Sukuma barbell juu ukiwa umesimama."],["Machine Shoulder Press","Sukuma handles za mashine juu."],["Arnold Press","Zungusha dumbbell unapoinua."],["Dumbbell Lateral Raise","Inua dumbbell pembeni."],["Cable Lateral Raise","Inua cable pembeni."],["Single-Arm Cable Lateral Raise","Inua cable pembeni kwa mkono mmoja."],["Behind-the-Body Cable Lateral Raise","Vuta cable kutoka nyuma ya mwili kwenda pembeni."],["Dumbbell Front Raise","Inua dumbbell mbele."],["Cable Front Raise","Inua cable mbele."],["Reverse Pec Deck","Fungua mikono nyuma kwa rear delts."],["Cable Rear Delt Fly","Vuta cable kuelekea nyuma/pembeni."],["Bent-Over Dumbbell Rear Delt Raise","Inua dumbbell pembeni ukiwa umeinama."],["Cable Upright Row","Vuta cable juu karibu na mwili."],["Dumbbell Shrug","Inua mabega ukiwa umeshika dumbbell."],["Barbell Shrug","Inua mabega ukiwa umeshika barbell."]
-]],
-["Biceps",[
-["Barbell Curl","Kunja mikono kwa barbell."],["EZ-Bar Curl","Kunja mikono kwa EZ bar."],["Dumbbell Alternating Curl","Kunja mkono mmoja baada ya mwingine."],["Hammer Curl","Kunja dumbbell kwa mshiko wa nyundo."],["Cross-Body Hammer Curl","Vuta dumbbell kuvuka kuelekea bega la pili."],["Incline Dumbbell Curl","Fanya curl kwenye incline bench."],["Preacher Curl","Fanya curl kwenye preacher bench."],["Machine Preacher Curl","Tumia preacher curl machine."],["Cable Biceps Curl","Vuta cable kutoka chini kuelekea mabegani."],["Straight-Bar Cable Curl","Tumia straight bar kwenye cable."],["EZ-Bar Cable Curl","Tumia EZ attachment kwenye cable."],["Rope Cable Hammer Curl","Fanya hammer curl kwa rope."],["Single-Arm Cable Curl","Fanya curl kwa mkono mmoja."],["Bayesian Cable Curl","Fanya cable curl ukiwa cable nyuma ya mwili."],["High Cable Curl","Vuta handles kutoka juu kuelekea kichwa."]
-]],
-["Triceps",[
-["Cable Triceps Pushdown","Sukuma bar ya cable chini."],["Rope Triceps Pushdown","Sukuma rope chini na tenganisha ncha."],["V-Bar Pushdown","Sukuma V-bar chini."],["Reverse-Grip Cable Pushdown","Sukuma cable kwa reverse grip."],["Single-Arm Cable Pushdown","Sukuma handle chini kwa mkono mmoja."],["Cross-Body Cable Triceps Extension","Nyosha mkono kuvuka mbele ya mwili."],["Overhead Cable Triceps Extension","Nyosha mikono juu ya kichwa kwa cable."],["Rope Overhead Extension","Nyosha rope juu ya kichwa."],["Single-Arm Overhead Cable Extension","Nyosha mkono mmoja juu ya kichwa."],["Dumbbell Overhead Extension","Nyosha dumbbell nyuma ya kichwa."],["Lying EZ-Bar Triceps Extension","Shusha EZ bar kuelekea nyuma ya kichwa."],["Skull Crusher","Kunja na kunyoosha viwiko ukiwa umelala."],["Close-Grip Bench Press","Bonyeza barbell kwa mshiko mwembamba."],["Bench Dips","Shusha na inua mwili ukitumia benchi."],["Parallel Bar Triceps Dips","Shusha mwili wima zaidi kwenye dip bars."],["Dumbbell Kickback","Nyoosha mkono nyuma ukiwa umeinama."]
-]],
-["Forearms",[
-["Wrist Curl","Kunja kifundo cha mkono kuelekea juu."],["Reverse Wrist Curl","Inua nyuma ya kiganja juu."],["Cable Wrist Curl","Fanya wrist curl kwa cable."],["Reverse Cable Wrist Curl","Fanya reverse wrist curl kwa cable."],["Farmer's Carry","Tembea ukiwa umeshika dumbbell."],["Plate Pinch Hold","Bana plates kwa vidole na ushikilie."],["Dead Hang","Shikilia pull-up bar."]
-]],
-["Lower Body (bila Squat)",[
-["Leg Press","Sukuma platform kwa miguu; tumia mwendo unaoruhusiwa."],["Leg Extension","Nyoosha magoti kwenye mashine."],["Seated Leg Curl","Kunja magoti kwenye mashine ukiwa umekaa."],["Lying Leg Curl","Kunja magoti kwenye mashine ukiwa umelala."],["Standing Leg Curl","Kunja goti ukiwa umesimama."],["Standing Calf Raise","Inua visigino juu."],["Seated Calf Raise","Inua visigino ukiwa umekaa."],["Glute Bridge","Inua nyonga ukiwa umelala chali."],["Hip Thrust","Inua nyonga kwa udhibiti."],["Cable Glute Kickback","Sukuma mguu nyuma kwa cable."],["Cable Hip Abduction","Sogeza mguu pembeni kwa cable."],["Hip Abduction Machine","Fungua magoti pembeni kwenye mashine."],["Hip Adduction Machine","Sogeza magoti kuelekea ndani kwenye mashine."],["Donkey Calf Raise","Inua visigino kwenye donkey calf machine."]
-]],
-["Core / Abs",[
-["Cable Crunch","Kunja kiwiliwili mbele kwa cable."],["Kneeling Cable Crunch","Fanya cable crunch ukiwa umepiga magoti."],["Machine Crunch","Fanya crunch kwenye mashine."],["Plank","Shikilia mwili kwenye mstari."],["Side Plank","Shikilia mwili kwa upande."],["Dead Bug","Nyoosha mkono na mguu wa pande tofauti."],["Reverse Crunch","Inua nyonga na magoti kuelekea kifuani."],["Hanging Knee Raise","Inua magoti ukiwa umening'inia."],["Ab Wheel Rollout","Sogeza ab wheel mbele na urudi kwa udhibiti."]
-]]
+const exercises={
+"Chest":["Flat Bench Press","Incline Bench Press","Decline Bench Press","Dumbbell Bench Press","Incline Dumbbell Press","Dumbbell Fly","Cable Chest Fly","Cable Crossover","Low-to-High Cable Fly","High-to-Low Cable Fly","Single-Arm Cable Chest Press","Cable Chest Press","Chest Dips","Assisted Chest Dips","Push-Up","Wide Push-Up","Machine Chest Press","Pec Deck Fly"],
+"Back":["Lat Pulldown","Close-Grip Lat Pulldown","Wide-Grip Lat Pulldown","Single-Arm Cable Pulldown","Straight-Arm Cable Pulldown","Seated Cable Row","Close-Grip Seated Cable Row","Wide-Grip Seated Cable Row","Single-Arm Cable Row","Bent-Over Barbell Row","Dumbbell Row","Chest-Supported Row","T-Bar Row","Pull-Up","Chin-Up","Back Extension","Face Pull"],
+"Shoulders":["Seated Shoulder Press","Dumbbell Shoulder Press","Arnold Press","Machine Shoulder Press","Cable Shoulder Press","Single-Arm Cable Lateral Raise","Cable Lateral Raise","Dumbbell Lateral Raise","Cable Front Raise","Dumbbell Front Raise","Cable Rear Delt Fly","Reverse Pec Deck","Bent-Over Rear Delt Raise","Upright Row","Face Pull","Shrugs"],
+"Biceps":["Barbell Curl","EZ-Bar Curl","Dumbbell Curl","Alternating Dumbbell Curl","Hammer Curl","Preacher Curl","Cable Biceps Curl","Straight-Bar Cable Curl","Rope Cable Hammer Curl","Single-Arm Cable Curl","Bayesian Cable Curl","Concentration Curl","Incline Dumbbell Curl"],
+"Triceps":["Cable Triceps Pushdown","Rope Pushdown","Reverse-Grip Pushdown","Single-Arm Cable Pushdown","Overhead Cable Triceps Extension","Rope Overhead Extension","Dumbbell Overhead Extension","Skull Crusher","Lying Triceps Extension","Close-Grip Bench Press","Bench Dips","Parallel-Bar Triceps Dips","Assisted Triceps Dips","Dumbbell Kickback"],
+"Forearms":["Wrist Curl","Reverse Wrist Curl","Behind-the-Back Wrist Curl","Cable Wrist Curl","Reverse Cable Wrist Curl","Hammer Curl","Farmer's Carry","Dead Hang"],
+"Lower Body (bila Squat)":["Leg Press (range salama)","Leg Extension","Seated Leg Curl","Lying Leg Curl","Standing Calf Raise","Seated Calf Raise","Glute Bridge","Hip Thrust","Cable Glute Kickback","Cable Hip Abduction","Cable Hip Adduction","Hip Abduction Machine","Hip Adduction Machine","Romanian Deadlift (ikiwa imeruhusiwa)"],
+"Core / Abs":["Plank","Side Plank","Crunch","Reverse Crunch","Cable Crunch","Cable Woodchop","Pallof Press","Hanging Knee Raise","Leg Raise","Dead Bug","Bird Dog"]
+};
+const topics=[
+["Maana ya HRM","Human Resource Management ni usimamizi wa watu kazini ili kufikia malengo ya taasisi na kusaidia wafanyakazi kufanya kazi vizuri."],
+["Majukumu ya HRM","Recruitment and selection, training and development, performance management, compensation, employee relations na health and safety."],
+["Human Resource Planning","Ni mchakato wa kutambua idadi na aina ya wafanyakazi wanaohitajika sasa na baadaye."],
+["Recruitment and Selection","Recruitment huvutia waombaji; selection huchagua mgombea anayefaa kwa kazi."],
+["Training and Development","Training huongeza ujuzi wa kazi ya sasa; development huandaa mfanyakazi kwa majukumu ya baadaye."],
+["Performance Management","Kuweka malengo, kupima matokeo, kutoa mrejesho na kusaidia kuboresha utendaji."],
+["Motivation","Motivation ni sababu zinazomfanya mtu ajitume. Nadharia maarufu ni Maslow na Herzberg."],
+["Employee Relations","Hujumuisha mawasiliano, utatuzi wa migogoro, nidhamu na ushirikiano kazini."]
 ];
-const $=id=>document.getElementById(id), today=()=>new Date().toISOString().slice(0,10);
-const fresh=()=>({records:[],notes:[],hrmNotes:[]});
-let data=load(), selected=null, editingNote=null, editingHrm=null;
-function load(){try{let d=JSON.parse(localStorage.getItem("KLB_DATA_V2"));return {records:Array.isArray(d?.records)?d.records:[],notes:Array.isArray(d?.notes)?d.notes:[],hrmNotes:Array.isArray(d?.hrmNotes)?d.hrmNotes:[]}}catch(e){return fresh()}}
-function save(){try{localStorage.setItem("KLB_DATA_V2",JSON.stringify(data));return true}catch(e){$("backupMsg").textContent="Hifadhi ya browser imejaa. Pakua backup yako.";return false}}
+const $=id=>document.getElementById(id);
+const load=(key,def)=>{try{return JSON.parse(localStorage.getItem(key))??def}catch(e){return def}};
+let records=load("klb_records",[]), notes=load("klb_notes",[]), hrmNotes=load("klb_hrm_notes",[]);
+const save=()=>{localStorage.setItem("klb_records",JSON.stringify(records));localStorage.setItem("klb_notes",JSON.stringify(notes));localStorage.setItem("klb_hrm_notes",JSON.stringify(hrmNotes))};
+function allExercises(){return Object.values(exercises).flat()}
+function init(){
+$("groupFilter").innerHTML='<option value="All">Makundi yote</option>'+Object.keys(exercises).map(g=>`<option>${g}</option>`).join("");
+$("rExercise").innerHTML=allExercises().map(x=>`<option>${x}</option>`).join("");
+$("rDate").value=new Date().toISOString().slice(0,10);
+$("hrmTopics").innerHTML=topics.map(([t,b])=>`<details class="item"><summary><strong>${t}</strong></summary><p class="muted">${b}</p></details>`).join("");
+renderExercises();renderRecords();renderNotes();renderHrmNotes();
+}
+function renderExercises(){
+let group=$("groupFilter").value, q=$("exerciseSearch").value.toLowerCase(), html="";
+Object.entries(exercises).filter(([g])=>group==="All"||g===group).forEach(([g,list])=>{
+let filtered=list.filter(x=>x.toLowerCase().includes(q));if(!filtered.length)return;
+html+=`<div class="section-title">${g}</div>`+filtered.map(x=>`<div class="exercise"><span>${x}</span><button class="btn secondary" data-pick="${x.replace(/"/g,"&quot;")}">Chagua</button></div>`).join("");
+});
+$("exerciseList").innerHTML=html||'<p class="muted">Hakuna zoezi lililopatikana.</p>';
+document.querySelectorAll("[data-pick]").forEach(b=>b.onclick=()=>{$("rExercise").value=b.dataset.pick;$("rExercise").scrollIntoView({behavior:"smooth",block:"center"})});
+}
+function renderRecords(){
+let from=$("fromDate").value,to=$("toDate").value;
+let list=records.filter(r=>(!from||r.date>=from)&&(!to||r.date<=to)).sort((a,b)=>b.date.localeCompare(a.date));
+$("totalRecords").textContent=list.length;$("totalSets").textContent=list.reduce((s,r)=>s+Number(r.sets||0),0);$("totalReps").textContent=list.reduce((s,r)=>s+Number(r.sets||0)*Number(r.reps||0),0);
+$("recordList").innerHTML=list.length?list.map(r=>`<div class="item"><strong>${esc(r.exercise)}</strong><span class="tag">${r.date}</span><p class="muted">${r.weight?esc(r.weight)+" kg • ":""}${r.sets} sets × ${r.reps} reps</p>${r.comment?`<p>${esc(r.comment)}</p>`:""}<button class="btn danger" data-del-record="${r.id}">Futa</button></div>`).join(""):'<p class="muted">Bado hakuna rekodi katika kipindi hiki.</p>';
+document.querySelectorAll("[data-del-record]").forEach(b=>b.onclick=()=>{if(confirm("Ufute rekodi hii?")){records=records.filter(r=>r.id!==b.dataset.delRecord);save();renderRecords()}});
+}
 function esc(s){return String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]))}
-function init(){ $("groupFilter").innerHTML=["Makundi yote",...EX.map(x=>x[0])].map(x=>`<option>${esc(x)}</option>`).join("");renderExercises();renderRecords();renderNotes();renderHrm()}
-function renderExercises(){let g=$("groupFilter").value||"Makundi yote",q=$("search").value.toLowerCase().trim(),out="";EX.filter(x=>g==="Makundi yote"||x[0]===g).forEach(([group,items])=>{let a=items.filter(x=>(x[0]+" "+x[1]).toLowerCase().includes(q));if(a.length)out+=`<div class="panel"><h3>${esc(group)}</h3>${a.map(x=>`<div class="exercise"><strong>${esc(x[0])}</strong><div class="small">${esc(x[1])}</div><button class="primary" data-ex="${esc(x[0])}" data-group="${esc(group)}">Rekodi zoezi</button></div>`).join("")}</div>`});$("exerciseList").innerHTML=out||"<p class=muted>Hakuna zoezi lililopatikana.</p>"}
-function openLog(name,group){selected={name,group};$("dlgName").textContent=name;$("dlgGroup").textContent=group;$("logDate").value=today();$("weight").value="";$("sets").value=3;$("reps").value=10;$("comment").value="";$("logDialog").showModal()}
-function renderRecords(){let f=$("fromDate").value,t=$("toDate").value,a=data.records.filter(r=>(!f||r.date>=f)&&(!t||r.date<=t)).sort((x,y)=>(y.date||"").localeCompare(x.date||""));$("sessions").textContent=a.length;$("setsTotal").textContent=a.reduce((s,r)=>s+(+r.sets||0),0);$("repsTotal").textContent=a.reduce((s,r)=>s+(+r.sets||0)*(+r.reps||0),0);$("recordList").innerHTML=a.length?a.map(r=>`<div class="record"><div class="row"><div><b>${esc(r.exercise)}</b><div class="small">${esc(r.group)} • ${esc(r.date)}</div></div><button class="danger" data-del="${esc(r.id)}">Futa</button></div><span class="badge">${esc(r.weight||0)} kg</span><span class="badge">${esc(r.sets)} sets</span><span class="badge">${esc(r.reps)} reps/set</span>${r.comment?`<p class=small>${esc(r.comment)}</p>`:""}</div>`).join(""):"<div class=panel class=muted>Bado hakuna rekodi. Chagua zoezi na bonyeza Rekodi zoezi.</div>"}
-function renderNotes(){ $("notesList").innerHTML=data.notes.map(n=>`<div class=panel><b>${esc(n.title)}</b><p>${esc(n.body).replace(/\n/g,"<br>")}</p><button data-edit-note="${esc(n.id)}">Hariri</button> <button class=danger data-del-note="${esc(n.id)}">Futa</button></div>`).join("")||"<p class=muted>Hakuna notes bado.</p>"}
-function renderHrm(){ $("hrmNotes").innerHTML=data.hrmNotes.map(n=>`<div class=record><b>${esc(n.title)}</b><p>${esc(n.body).replace(/\n/g,"<br>")}</p><button data-edit-hrm="${esc(n.id)}">Hariri</button> <button class=danger data-del-hrm="${esc(n.id)}">Futa</button></div>`).join("")}
-document.querySelectorAll("nav button").forEach(b=>b.onclick=()=>{document.querySelectorAll("nav button").forEach(x=>x.classList.remove("active"));document.querySelectorAll(".tab").forEach(x=>x.classList.remove("active"));b.classList.add("active");$(b.dataset.tab).classList.add("active");if(b.dataset.tab==="records")renderRecords()});
-$("groupFilter").onchange=renderExercises;$("search").oninput=renderExercises;
-$("exerciseList").onclick=e=>{let b=e.target.closest("[data-ex]");if(b)openLog(b.dataset.ex,b.dataset.group)};
-$("cancel").onclick=()=>$("logDialog").close();
-$("logForm").onsubmit=e=>{e.preventDefault();if(!selected)return;data.records.push({id:String(Date.now())+Math.random(),exercise:selected.name,group:selected.group,date:$("logDate").value,weight:$("weight").value,sets:$("sets").value,reps:$("reps").value,comment:$("comment").value});save();$("logDialog").close();renderRecords()};
-$("recordList").onclick=e=>{let b=e.target.closest("[data-del]");if(b&&confirm("Ufute rekodi hii?")){data.records=data.records.filter(x=>x.id!==b.dataset.del);save();renderRecords()}};
-$("fromDate").onchange=renderRecords;$("toDate").onchange=renderRecords;$("resetDates").onclick=()=>{$("fromDate").value="";$("toDate").value="";renderRecords()};
-$("saveNote").onclick=()=>{let title=$("noteTitle").value.trim(),body=$("noteBody").value.trim();if(!title&&!body)return alert("Andika note kwanza.");if(editingNote){let n=data.notes.find(x=>x.id===editingNote);if(n){n.title=title;n.body=body}}else data.notes.push({id:String(Date.now()),title,body});editingNote=null;$("noteTitle").value="";$("noteBody").value="";$("saveNote").textContent="Hifadhi note";save();renderNotes()};
-$("notesList").onclick=e=>{let a=e.target.closest("[data-edit-note]"),b=e.target.closest("[data-del-note]");if(a){let n=data.notes.find(x=>x.id===a.dataset.editNote);editingNote=n.id;$("noteTitle").value=n.title;$("noteBody").value=n.body;$("saveNote").textContent="Hifadhi mabadiliko"}if(b&&confirm("Futa note?")){data.notes=data.notes.filter(x=>x.id!==b.dataset.delNote);save();renderNotes()}};
-$("saveHrm").onclick=()=>{let title=$("hrmTitle").value.trim(),body=$("hrmBody").value.trim();if(!title&&!body)return alert("Andika note kwanza.");if(editingHrm){let n=data.hrmNotes.find(x=>x.id===editingHrm);if(n){n.title=title;n.body=body}}else data.hrmNotes.push({id:String(Date.now()),title,body});editingHrm=null;$("hrmTitle").value="";$("hrmBody").value="";$("saveHrm").textContent="Hifadhi notes za HRM";save();renderHrm()};
-$("hrmNotes").onclick=e=>{let a=e.target.closest("[data-edit-hrm]"),b=e.target.closest("[data-del-hrm]");if(a){let n=data.hrmNotes.find(x=>x.id===a.dataset.editHrm);editingHrm=n.id;$("hrmTitle").value=n.title;$("hrmBody").value=n.body;$("saveHrm").textContent="Hifadhi mabadiliko"}if(b&&confirm("Futa note ya HRM?")){data.hrmNotes=data.hrmNotes.filter(x=>x.id!==b.dataset.delHrm);save();renderHrm()}};
-$("exportBtn").onclick=()=>{let blob=new Blob([JSON.stringify({app:"KESSY LIFE BALANCE",version:2,exported:new Date().toISOString(),data},null,2)],{type:"application/json"});let u=URL.createObjectURL(blob),a=document.createElement("a");a.href=u;a.download="KESSY-LIFE-BALANCE-backup-"+today()+".json";document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(u),1500);$("backupMsg").textContent="Backup imetengenezwa. Angalia Downloads kwenye simu."};
-$("importBtn").onclick=async()=>{let f=$("importFile").files[0];if(!f){$("backupMsg").textContent="Chagua faili la JSON kwanza.";return}try{let o=JSON.parse(await f.text()),d=o.data||o;if(!Array.isArray(d.records)||!Array.isArray(d.notes))throw Error("bad");let merge=(old,inc)=>{let ids=new Set(old.map(x=>x.id));return old.concat(inc.filter(x=>!ids.has(x.id)))};data.records=merge(data.records,d.records);data.notes=merge(data.notes,d.notes||[]);data.hrmNotes=merge(data.hrmNotes,d.hrmNotes||[]);save();renderRecords();renderNotes();renderHrm();$("backupMsg").textContent="Backup imerejeshwa kwa mafanikio."}catch(e){$("backupMsg").textContent="Faili si backup sahihi ya KESSY LIFE BALANCE."}};
-$("csvBtn").onclick=()=>{let rows=[["Date","Group","Exercise","Weight kg","Sets","Reps per set","Comment"],...data.records.map(r=>[r.date,r.group,r.exercise,r.weight,r.sets,r.reps,r.comment])];let csv=rows.map(r=>r.map(v=>'"'+String(v??"").replace(/"/g,'""')+'"').join(",")).join("\r\n");let u=URL.createObjectURL(new Blob(["\ufeff"+csv],{type:"text/csv;charset=utf-8"})),a=document.createElement("a");a.href=u;a.download="KESSY-workout-records.csv";a.click();setTimeout(()=>URL.revokeObjectURL(u),1500)};
-$("clearAll").onclick=()=>{if(confirm("Hakikisha umepakua backup. Futa rekodi na notes zote?")){data=fresh();save();renderRecords();renderNotes();renderHrm();$("backupMsg").textContent="Data imefutwa."}};
+function renderNotes(){
+$("notesList").innerHTML=notes.length?notes.map(n=>`<div class="item"><strong>${esc(n.title)}</strong><p>${esc(n.body).replace(/\n/g,"<br>")}</p><span class="tag">${n.date}</span> <button class="btn danger" data-del-note="${n.id}">Futa</button></div>`).join(""):'<p class="muted">Hakuna notes bado.</p>';
+document.querySelectorAll("[data-del-note]").forEach(b=>b.onclick=()=>{notes=notes.filter(n=>n.id!==b.dataset.delNote);save();renderNotes()});
+}
+function renderHrmNotes(){
+$("hrmNotes").innerHTML=hrmNotes.length?hrmNotes.map(n=>`<div class="item"><strong>${esc(n.title)}</strong><p>${esc(n.body).replace(/\n/g,"<br>")}</p><span class="tag">${n.date}</span> <button class="btn danger" data-del-hrm="${n.id}">Futa</button></div>`).join(""):'<p class="muted">Bado hujahifadhi notes za HRM.</p>';
+document.querySelectorAll("[data-del-hrm]").forEach(b=>b.onclick=()=>{hrmNotes=hrmNotes.filter(n=>n.id!==b.dataset.delHrm);save();renderHrmNotes()});
+}
+document.querySelectorAll("[data-tab]").forEach(b=>b.onclick=()=>{document.querySelectorAll("[data-tab]").forEach(x=>x.classList.toggle("active",x===b));document.querySelectorAll(".page").forEach(p=>p.classList.toggle("hidden",p.id!==b.dataset.tab));if(b.dataset.tab==="records")renderRecords()});
+$("groupFilter").onchange=renderExercises;$("exerciseSearch").oninput=renderExercises;$("fromDate").onchange=renderRecords;$("toDate").onchange=renderRecords;
+$("recordForm").onsubmit=e=>{e.preventDefault();records.push({id:Date.now()+"-"+Math.random().toString(16).slice(2),date:$("rDate").value,exercise:$("rExercise").value,weight:$("rWeight").value,sets:$("rSets").value,reps:$("rReps").value,comment:$("rComment").value});save();e.target.reset();$("rDate").value=new Date().toISOString().slice(0,10);$("rSets").value=3;$("rReps").value=10;alert("Rekodi imehifadhiwa.");};
+$("saveNote").onclick=()=>{if(!$("noteTitle").value.trim()||!$("noteBody").value.trim())return alert("Jaza kichwa na maandishi.");notes.push({id:String(Date.now()),title:$("noteTitle").value,body:$("noteBody").value,date:new Date().toISOString().slice(0,10)});$("noteTitle").value="";$("noteBody").value="";save();renderNotes()};
+$("saveHrm").onclick=()=>{if(!$("hrmTitle").value.trim()||!$("hrmBody").value.trim())return alert("Jaza kichwa na maandishi.");hrmNotes.push({id:String(Date.now()),title:$("hrmTitle").value,body:$("hrmBody").value,date:new Date().toISOString().slice(0,10)});$("hrmTitle").value="";$("hrmBody").value="";save();renderHrmNotes()};
+function download(name,data,type){let blob=new Blob([data],{type}),url=URL.createObjectURL(blob),a=document.createElement("a");a.href=url;a.download=name;document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),1000)}
+$("exportJson").onclick=()=>download("kessy-life-balance-backup.json",JSON.stringify({app:"KESSY LIFE BALANCE",version:1,records,notes,hrmNotes},null,2),"application/json");
+$("exportCsv").onclick=()=>{let rows=[["Tarehe","Zoezi","Uzito kg","Sets","Reps","Maoni"],...records.map(r=>[r.date,r.exercise,r.weight,r.sets,r.reps,r.comment])];let csv=rows.map(row=>row.map(v=>'"'+String(v??"").replace(/"/g,'""')+'"').join(",")).join("\n");download("kessy-workout-records.csv","\ufeff"+csv,"text/csv;charset=utf-8")};
+$("importJson").onclick=()=>{let f=$("importFile").files[0];if(!f)return alert("Chagua backup ya JSON kwanza.");let reader=new FileReader();reader.onload=()=>{try{let d=JSON.parse(reader.result);if(!Array.isArray(d.records)||!Array.isArray(d.notes)||!Array.isArray(d.hrmNotes))throw Error("Muundo si sahihi");if(!confirm("Import itaongeza data za backup kwenye zilizopo. Endelea?"))return;records=records.concat(d.records);notes=notes.concat(d.notes);hrmNotes=hrmNotes.concat(d.hrmNotes);save();renderRecords();renderNotes();renderHrmNotes();alert("Backup imerejeshwa.");}catch(e){alert("Faili si backup sahihi ya KESSY LIFE BALANCE.");}};reader.readAsText(f)};
 init();
 </script>
 </body></html>
